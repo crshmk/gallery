@@ -16,7 +16,7 @@ const ActiveImage = () => {
 
   return (
     <div className="active-img">
-      {!hasLoaded && <img src={imagePlaceholder} />}
+      {!hasLoaded && <img className="loading-placeholder" src={imagePlaceholder} />}
       <img 
         className={imgClassName} 
         src={activeImage} 
