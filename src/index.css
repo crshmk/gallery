@@ -41,6 +41,8 @@ img {
 
 .gallery .active-img img.loading {
   visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .gallery .bullets {
@@ -99,7 +101,6 @@ img {
   bottom: 17vh;
   left: 1vw;
 }
-
 
 .gallery .label span {
   font-size: 14px;
