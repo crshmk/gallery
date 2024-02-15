@@ -33,6 +33,7 @@ export const GalleryProvider = ({ children }) => {
     activeImageIndex,
     activeSection,
     changeImage, 
+    setActiveImageIndex,
     setActiveSectionIndex,
     imageSections 
   }

@@ -5,6 +5,7 @@ import anaMandara from '../assets/img/ana-mandara.jpg'
 import shackJam from '../assets/img/first-shack-jam.jpg'
 import teachingHistory from '../assets/img/teaching-history.jpg'
 import coach from '../assets/img/coach.jpg'
+import gimmeShelter from '../assets/img/gimme-shelter.jpg'
 
 import ntOffice from '../assets/img/nt-office.jpg'
 import flyoverNt from '../assets/img/flyover-nt.jpg'
@@ -25,7 +26,7 @@ const imageSections = [
   {
     label: 'music',
     blurb: `I've spent a lot of my life playing music. I gigged a few nights a week in Saigon with a rock star Filipino band. When I was setting up my dev shop in Nha Trang, I played covers on the beach for tourists. Software engineering and guitar playing are the same thing.`,
-    images: [shackJam, sailingDengue, anaMandara]
+    images: [shackJam, sailingDengue, anaMandara, gimmeShelter]
   },
   {
     label: 'teaching',
