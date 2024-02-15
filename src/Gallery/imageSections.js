@@ -1,12 +1,13 @@
 import temple from '../assets/img/laos-temple.jpg'
+import smokeHat from '../assets/img/smoke-hat.jpg'
 
 const imageSections = [
   {
-    label: 'Travel',
-    images: [temple, temple, temple, temple]
+    label: 'travel',
+    images: [temple, smokeHat, temple, smokeHat]
   },
   {
-    label: 'Music',
+    label: 'music',
     images: [temple, temple, temple]
   }
 ]

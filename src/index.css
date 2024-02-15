@@ -44,10 +44,10 @@ img {
   padding-top: 10vh;
 }
 .gallery .bullets .bullet {
+  position: relative;
   width: 7vh;
   height: 7vh;
-  border: 5px solid transparent;
-  border-radius: 50%;
+  border: 2px solid transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,15 +58,30 @@ img {
   transition: border .3s ease;
 }
 
+
+.gallery .bullets .bullet:after {
+  content: '';
+  position: absolute;
+  top: 9vh;
+  left: 25%;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width .2s ease;
+}
+
 .gallery .bullets .bullet.active { 
   border: 2px solid black;
+}
+
+.gallery .bullets .bullet.active:after { 
+
+  width: 50%;
 }
 
 .gallery .bullets .bullet img {
   border-radius: 50%;
 }
-
-
 
 .gallery .label {
   display: flex;
@@ -81,4 +96,5 @@ img {
 .gallery .label span {
   font-size: 14px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
