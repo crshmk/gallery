@@ -17,6 +17,17 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 .gallery {
  padding-top: 10vh;
@@ -106,4 +117,23 @@ img {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+
+.gallery-menu {
+  position: absolute;
+  top: 7vh;
+  left: 3vw;
+}
+
+.gallery-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.gallery-menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: inherit;
 }
