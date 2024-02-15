@@ -23,17 +23,24 @@ img {
 }
 
 .gallery img {
-  max-height: 65vh;
+  height: 65vh;
 }
 
 .gallery .active-img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 65vh;
 }
 .gallery .active-img img {
   border-radius: 3px;
   box-shadow: 0px 0px 4px rgba(0,0,0,.3);
+  visibility: visible;
+}
+
+
+.gallery .active-img img.loading {
+  visibility: hidden;
 }
 
 .gallery .bullets {
@@ -56,6 +63,7 @@ img {
   background-clip: content-box; 
   cursor: pointer;
   transition: border .3s ease;
+  background-color: rgb(200, 200, 200);
 }
 
 
