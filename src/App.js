@@ -1,11 +1,11 @@
 import React, { lazy } from 'react'
 
-const Page = lazy(() => import('./Page') )
+const Gallery = lazy(() => import('./Gallery') )
 
 import './index.css'
 
 const App = () => 
-  <Page />
+  <Gallery />
 
 export default App
 
