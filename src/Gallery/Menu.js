@@ -1,10 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import imageSections, { imageSectionTitles } from './imageSections'
+import { imageSectionTitles } from './imageSections'
 
-const MenuLink = ({ sectionTitle }) => 
-  <li><Link to={`/gallery/${sectionTitle}`}>{sectionTitle}</Link></li>
+const MenuLink = ({ sectionTitle }) => {
+  const label = sectionTitle.replace('-', ' ')
+  return (
+    <li>
+      <Link to={`/gallery/${sectionTitle}`}>
+        {label}
+      </Link>
+    </li>
+  )
+}
 
 const MenuLinks = () => imageSectionTitles.map(sectionTitle => 
   <MenuLink sectionTitle={sectionTitle} />
