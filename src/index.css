@@ -132,6 +132,10 @@ a {
   gap: 7px;
 }
 
+.gallery-menu ul li {
+  cursor: pointer;
+}
+
 .gallery-menu li a {
   font-size: 14px;
   text-transform: uppercase;

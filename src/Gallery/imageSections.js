@@ -11,6 +11,7 @@ import ntOffice from '../assets/img/nt-office.jpg'
 import flyoverNt from '../assets/img/flyover-nt.jpg'
 import tranPhu from '../assets/img/tran-phu.jpg'
 import sailingWork from '../assets/img/sailing-work.jpg'
+import baiGai from '../assets/img/bai-gai.jpg'
 
 import _1 from '../assets/img/travel/1.jpg'
 import _2 from '../assets/img/travel/2.jpg'
@@ -36,7 +37,7 @@ const imageSections = [
   {
     label: 'nha-trang',
     blurb: `I've spent about five years in this nice beach town in Vietnam.`,
-    images: [ntOffice, tranPhu, flyoverNt, sailingWork]
+    images: [ntOffice, tranPhu, flyoverNt, sailingWork, baiGai]
   }
 ]
 
