@@ -1,0 +1,22 @@
+.gallery-menu {
+  position: absolute;
+  top: 7vh;
+  left: 3vw;
+}
+
+.gallery-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.gallery-menu ul li {
+  cursor: pointer;
+}
+
+.gallery-menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: inherit;
+}
+

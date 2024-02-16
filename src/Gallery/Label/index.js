@@ -1,6 +1,8 @@
 import React from 'react'
 
-import useGallery from './useGallery'
+import './label.css'
+
+import useGallery from '../useGallery'
 
 const Label = () => {
   const { activeSection, activeImageIndex } = useGallery()

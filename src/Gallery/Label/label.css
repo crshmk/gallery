@@ -1,0 +1,14 @@
+.gallery .label {
+  display: flex;
+  gap: 17px;
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 17vh;
+  left: 1vw;
+}
+
+.gallery .label span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-import useGallery from './useGallery'
+import './active-image.css'
 
-import imagePlaceholder from '../assets/img/image-placeholder.png'
+import useGallery from '../useGallery'
+
+import imagePlaceholder from '../../assets/img/image-placeholder.png'
 
 import ChevronLeft from './ChevronLeft'
-import ChevronRight from './ChevronRight'
+import ChevronRight from './ChevronRight/index'
 
 const ActiveImage = () => {
   const { activeImage, activeImageIndex, decrement, increment } = useGallery()

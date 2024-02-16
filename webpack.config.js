@@ -50,5 +50,6 @@ module.exports = {
     open: true,
     port: 4200,
     static: resolve('dist')
-  }
+  },
+  cache: false
 }

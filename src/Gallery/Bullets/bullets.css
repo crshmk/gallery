@@ -1,0 +1,45 @@
+.gallery .bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  padding-top: 10vh;
+}
+.gallery .bullets .bullet {
+  position: relative;
+  width: 7vh;
+  height: 7vh;
+  border: 2px solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-clip: content;    
+  -webkit-background-clip: content;  
+  background-clip: content-box; 
+  cursor: pointer;
+  transition: border .3s ease;
+  background-color: rgb(200, 200, 200);
+}
+
+.gallery .bullets .bullet:after {
+  content: '';
+  position: absolute;
+  top: 9vh;
+  left: 25%;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width .2s ease;
+}
+
+.gallery .bullets .bullet.active { 
+  border: 2px solid black;
+}
+
+.gallery .bullets .bullet.active:after { 
+  width: 50%;
+}
+
+.gallery .bullets .bullet img {
+  border-radius: 50%;
+}

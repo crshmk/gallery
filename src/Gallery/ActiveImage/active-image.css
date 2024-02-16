@@ -1,0 +1,38 @@
+.gallery .active-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  /* chevron buttons */
+  gap: 17px;
+}
+
+.gallery .active-img img {
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,.3);
+  visibility: visible;
+}
+
+.gallery .active-img img.loading {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.loading-placeholder {
+  opacity: .2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.chevron {
+  display: flex;
+  padding: 7px;
+  border: 1px solid black;
+}
+
+.chevron.inactive {
+  pointer-events: none;
+  opacity: .2;
+}
