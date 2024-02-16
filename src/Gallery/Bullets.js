@@ -3,7 +3,7 @@ import React from 'react'
 import useGallery from './useGallery'
 
 const useOnKeyDown = (i) => {
-  const { activeImageIndex, activeSection, setActiveImageIndex } = useGallery()
+  const { decrement, increment, setActiveImageIndex } = useGallery()
   
   const onKeyDown = e => {
     if(e.key === 'Enter') {
@@ -11,13 +11,11 @@ const useOnKeyDown = (i) => {
       return 
     } 
     if(e.key === 'ArrowLeft') {
-      const newImageIndex = Math.max(0, activeImageIndex - 1)
-      setActiveImageIndex(newImageIndex)
+      decrement()
       return 
     } 
     if(e.key === 'ArrowRight') {
-      const newImageIndex = Math.min(activeSection.images.length-1, activeImageIndex + 1)
-      setActiveImageIndex(newImageIndex)
+      increment()
       return 
     }
   }

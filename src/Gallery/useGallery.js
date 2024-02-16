@@ -16,7 +16,6 @@ const useActiveSection = () => {
 }
 
 export const GalleryProvider = ({ children }) => {
-  const [activeSectionIndex, setActiveSectionIndex] = useState(0)
   const [activeImageIndex, setActiveImageIndex] = useState(0)
   const activeSection = useActiveSection()
 
@@ -28,13 +27,24 @@ export const GalleryProvider = ({ children }) => {
 
   const changeImage = i => () => setActiveImageIndex(i) 
 
+  const increment = () => {
+    const newImageIndex = Math.min(activeSection.images.length-1, activeImageIndex + 1)
+    setActiveImageIndex(newImageIndex)
+  }
+
+  const decrement = () => {
+    const newImageIndex = Math.max(0, activeImageIndex - 1)
+    setActiveImageIndex(newImageIndex)
+  }
+
   const ctx = {
     activeImage, 
     activeImageIndex,
     activeSection,
     changeImage, 
+    decrement,
+    increment,
     setActiveImageIndex,
-    setActiveSectionIndex,
     imageSections 
   }
 
